@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: 1rem;
+}
+
+header{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    padding-top: 10px;
+    background-image: url(https://i.pinimg.com/originals/40/1b/e1/401be19115aefd10f7c7f9c51036e94c.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    gap: 1rem;
+}
+
+aside {
+    width: 100%;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    /* background-color: blueviolet; */
+}
+
+a{
+    color: rgba(47, 0, 255, 0.288);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+}
+
+h3{
+    font-size: 30px;
+    padding: 5px 0px;
+    font-family: 'Overpass'
+}
+
+h4{ 
+    font-size: 20px;
+    padding: 3px 0px;
+    font-family: 'Overpass';
+    font-weight: 600;
+}
+
+#personal-data ul, #personal-data{
+    list-style: none;
+    text-align: center;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#personal-data > li{
+    font-size: larger;
+    font-family: 'Overpass';
+}
+
+#list-icon:before {
+    content: "\00BB \0020";
+}
+
+#main-section ul{
+    margin-left: 1rem;
+}
+#main-section{
+    width: 100%;
+    background-color: rgba(47, 0, 255, 0.055);
+    padding: 30px;
+    padding-left: 50px;
+}
+
+#titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#main-photo{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#main-photo > img{
+    border-radius: 50%;
+}
+
+#title-email , #title-adress, #title-phonenumber, #title-birthday{
+    font-family: 'Overpass';
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#email-direction, #adress, #phonenumber, #birthday-date{
+    font-size: 20px;
+}
+
+#personal-data > li :hover{
+    font-weight: bolder;
+}
+
+#main-photo > img:hover{
+    transform: scale(1.2);
+    transition: 2.5s;
+}
+
+li {
+    font-family: 'Overpass';
+    font-size: 15px;
+    padding: 3px 0px;
+    list-style: none;
+}
+
+footer{
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(144, 43, 226, 0.116);
+    background-image: url(https://i.pinimg.com/originals/40/1b/e1/401be19115aefd10f7c7f9c51036e94c.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 750px) {
+    main{
+        flex-wrap: wrap;
+    }
+    aside{
+        width: 100%;
+        align-items: center;
+    }
+
+    header{
+        flex-wrap: wrap;
+    }
+
+    #main-photo {
+        width: 100%;
+        order: 1;
+    }
+}
+
